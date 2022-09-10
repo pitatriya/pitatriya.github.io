@@ -12,11 +12,15 @@
 <!-- Ini STYLE CSS nya -->
 	<style>
 		body {
-			background-color: #E5F7FF;
+			background-color: #eee;
 		}
 
 		h1{
 			text-align: center;
+		}
+
+		a { 
+			text-decoration: none;
 		}
 
 		.tabelku {
@@ -31,14 +35,14 @@
 		}
 
 		.isi {
-			background-color: pink;
+			background-color: white;
 		}
 	</style>
 <!-- ini akhir style -->
 
 
 <!-- ini isi konten nya-->
-	<h1>The top of 5 My Best friend</h1>
+	<h1>Ini juga 5 nama orang</h1>
 	<center><a href="../pages.html">Halaman Utama</a></center>
 	<hr><br>
 
@@ -49,38 +53,66 @@
 			<th>Alamat</th>
 			<th>Aksi</th>
 		</tr>
-		<tr class="isi">
+		<tr class="isi" id="row__1">
 			<td>1</td>
-			<td>Shafira Yunita</td>
-			<td>Beber</td>
-			<td>Hapus</td>
+			<td class="nama_mhs">Shafira Yunita</td>
+			<td class="alamat">Beber</td>
+			<td class="hapus" id="hapus__1">Hapus</td>
 		</tr>
-		<tr>
+		<tr id="row__2">
 			<td>2</td>
-			<td>Hanna Rasyidah Priyatna</td>
-			<td>Cirebon</td>
-			<td>Hapus</td>
+			<td class="nama_mhs">Hanna Rasyidah Priyatna</td>
+			<td class="alamat">Cirebon</td>
+			<td class="hapus" id="hapus__2">Hapus</td>
 		</tr>
-		<tr class="isi">
+		<tr class="isi" id="row__3">
 			<td>3</td>
-			<td>Fitri Fadhilah</td>
-			<td>Plered</td>
-			<td>Hapus</td>
+			<td class="nama_mhs">Fitri Fadhilah</td>
+			<td class="alamat">Plered</td>
+			<td class="hapus" id="hapus__3">Hapus</td>
 		</tr>
-		<tr>
+		<tr id="row__4">
 			<td>4</td>
-			<td>Teneshya</td>
-			<td>Cirebon</td>
-			<td>Hapus</td>
+			<td class="nama_mhs">Kinanti</td>
+			<td class="alamat">Cirebon</td>
+			<td class="hapus" id="hapus__4">Hapus</td>
 		</tr>
-		<tr class="isi">
+		<tr class="isi" id="row__5">
 			<td>5</td>
-			<td>Nurhayati</td>
-			<td>Cirebon</td>
-			<td>Hapus</td>
+			<td class="nama_mhs">Nurhayati</td>
+			<td class="alamat">Cirebon</td>
+			<td class="hapus" id="hapus__5">Hapus</td>
 		</tr>	
 	</table>
 <!-- Akhir konten -->
+
+<!-- Javascript disini -->
+<script>
+	$(document).ready(function(){
+		$('.nama_mhs').click(function(){
+			let isi = $(this).text();
+			let isi2 = prompt('Ubah dengan:', isi);
+			if(!isi2)return;
+			$(this).text(isi2);
+		})
+
+		$('.hapus').click(function(){
+			let yakin = confirm('Anda yakin ingin menghapus teman anda?');
+			if(!yakin) return;
+
+			let id = $(this).prop('id');
+			let rid = id.split('__');
+			let baris_ke = rid[1];
+
+			$('#row__'+baris_ke).slideUp()
+		})
+
+		$	('.alamat').click(function(){
+			alert('anda sedang berada di alamat')
+		})
+		
+	})
+</script>
 
 </body>
 </html>
