@@ -17,10 +17,13 @@
 
 		h1{
 			text-align: center;
+			font-family: cursive;
 		}
 
 		a { 
 			text-decoration: none;
+			color: black;
+			font-family: cursive;
 		}
 
 		.tabelku {
@@ -37,14 +40,34 @@
 		.isi {
 			background-color: white;
 		}
+
+		.halaman {
+			width: 200px;
+			height: 30px;
+			text-align: center;
+			border-radius: 20px;
+			background-color: white;
+			box-shadow: 1px 1px 2px black;
+			transition: 0.2s;
+			padding-top: 8px;
+			justify-content: center;
+			margin-left: 30px;
+		}
+
+		.halaman:hover {
+			transform: scale(1.2);
+			box-shadow: 1px 1px 4px gray;
+		}
 	</style>
 <!-- ini akhir style -->
 
 
 <!-- ini isi konten nya-->
-	<h1>Ini juga 5 nama orang</h1>
-	<center><a href="../pages.html">Halaman Utama</a></center>
-	<hr><br>
+	<h1>Ini juga 5 nama orang</h1><hr>
+	<div class="halaman">
+		<a href="../pages.html">Halaman Utama</a>
+	</div>
+	<br>
 
 	<table class="tabelku">
 		<tr class="judul">

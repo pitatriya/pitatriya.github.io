@@ -9,7 +9,15 @@
 		body{
 			background-color: #eee;
 			text-align: center;
-			margin-top: 150px;
+			margin-top: 130px;
+		}
+
+		h1 {
+			font-family: cursive;
+		}
+
+		p {
+			font-family: Verdana;
 		}
 
 		a{
@@ -23,16 +31,52 @@
 			object-fit: cover;
 			border-radius: 50%;
 		}
+
+		.halaman {
+			width: 200px;
+			height: 30px;
+			text-align: center;
+			border-radius: 20px;
+			background-color: #74BDE0;
+			box-shadow: 1px 1px 2px black;
+			transition: 0.2s;
+			padding-top: 8px;
+			display: inline-block;
+			justify-content: space-between;
+		}
+
+		.halaman:hover {
+			transform: scale(1.2);
+			box-shadow: 1px 1px 4px white;
+		}
+
+		.page {
+			height: 400px;
+			background-color: white;
+			border-radius: 15px;
+			padding-top: 5px;
+		}
 	</style>
 	
+	<div class="page">
+		<h1>Selamat datang di halaman utama dari Challenge Pertemuan 3</h1>
+		<img src="poto.jpg">
+		<p>Nama: Pita Triya <br> NIM: 32211514</p><br><br>
 
-	<h1>Selamat datang di halaman utama dari Challenge Pertemuan 3</h1>
-	<img src="poto.jpg">
-	<p>Nama: Pita Triya <br> NIM: 32211514</p><br><br>
-
-	<a href="p03/table.html">P03 HTML Table Sederhana</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="p03css/tablecss.html">P03 HTML Table CSS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-	<a href="p03jquery/tablejquery.html">P03 Table JQuery</a>
+		<div class="halaman">
+			<a href="p03/table.html">P03 HTML Table Sederhana</a>
+		</div>
+		
+		<div class="halaman">
+			<a href="p03css/tablecss.html">P03 HTML Table CSS</a>
+		</div>
+		 
+		<div class="halaman">
+			<a href="p03jquery/tablejquery.html">P03 Table JQuery</a>
+		</div>
+	</div>
+	
+	
 	
 
 </body>
