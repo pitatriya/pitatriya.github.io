@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="stylepage.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Selamat Datang di Website Portofolio saya</h1>
+  <p>NIM: 32211514 <br> Nama: Pita Triya</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="p03jquery/tablejquery.html">Table JQuery</a></li>
+      <li><a href="p03form-lv1/form-lv1.html">Form Pendaftaran</a></li>
+    </ul>
+  </div>
+  
+  <div class="column">
+    <h1>Selamat datang di Website Portofolio saya</h1>
+    <img src="poto.jpg">
+    <p>Nama: Pita Triya <br> NIM: 32211514</p><br><br>
+
+    <div class="halaman">
+      <a href="p03/table.html">P03 HTML Table Sederhana</a>
+    </div>
+    
+    <div class="halaman">
+      <a href="p03css/tablecss.html">P03 HTML Table CSS</a>
+    </div>
+     
+    <div class="halaman">
+      <a href="p03jquery/tablejquery.html">P03 Table JQuery</a>
+  </div>
+  
+</div>
+
+</body>
+</html>
+
+

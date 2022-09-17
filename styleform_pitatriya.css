@@ -1,0 +1,93 @@
+.akhirfloat {
+	clear: left;
+}
+
+.bowl {
+	margin: 40px;
+}
+
+.anak-bowl {
+	background-color: #eee;
+}
+
+.akhirfloat2 {
+	clear: right;
+}
+
+.gambar {
+	width: 150px; 
+	float: left; 
+	padding-right: 20px;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 5px 10px;
+	margin: 5px 0;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+input[type=text]:focus {
+	background-color: lightblue;
+}
+
+select {
+	width: 100%;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 4px;
+}
+
+input[type=date] {
+	padding: 5px 10px;
+	border: none;
+	border-radius: 4px;
+}
+
+textarea {
+	width: 100%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	resize: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table,th,td {
+	height: 50px;
+}
+
+table.td {
+	padding: 15px;
+}
+
+hr {
+	border: 2px solid black;
+}
+
+.kirim {
+	background-color: #04AA6D;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.page a {
+	background-color: #2FC0FF;
+	border: none;
+	color: black;
+	text-decoration: none;
+	padding: 10px 25px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 4px;
+}
