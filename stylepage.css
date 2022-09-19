@@ -1,9 +1,3 @@
-body{
-	background-color: white;
-	text-align: center;
-	width: 100%;
-}
-
 h1 {
 	font-family: cursive;
 }
@@ -24,30 +18,28 @@ img {
 	border-radius: 50%;
 }
 
-.halaman {
-	width: 200px;
-	height: 30px;
+.side-atas {
+	background-color: lightblue;
+	color: white;
+	padding: 15px;
 	text-align: center;
-	border-radius: 20px;
-	background-color: #74BDE0;
-	box-shadow: 1px 1px 2px black;
-	transition: 0.2s;
-	padding-top: 8px;
-	display: inline-block;
-	justify-content: space-between;
 }
 
-.halaman:hover {
-	transform: scale(1.2);
-	box-shadow: 1px 1px 4px white;
+.side-samping {
+	float: left;
+	width: 20%;
+	padding-top: 10px;
 }
 
-.page {
-	height: 100%;
-	background-color: white;
-	border-radius: 15px;
-	padding-top: 5px;
-	padding-left: 0;
+.utama {
+	float: right;
+	width: 70%;
+	min-height: 400px;
+	text-align: center;
+}
+
+.bersih {
+	clear: both;
 }
 
 ul {
@@ -74,7 +66,56 @@ li a:hover {
 	color: white;
 }
 
+
 li a.active{
 	background-color: #04AA6D;
 	color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+	[class="porto"] {
+		width: 100%;
+	}
+}
+
+.judul {
+  color: black;
+  padding: 8px 16px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-isi {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menu-isi a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-isi a:hover {background-color: #04AA6D}
+
+.menu:hover .menu-isi {
+	display: block;
+}
+
+.menu:hover .judul {
+  background-color: lightblue;
+  color: white;
 }
