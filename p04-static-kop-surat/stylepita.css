@@ -1,0 +1,98 @@
+body {
+	font-family: arial;
+	padding: 0;
+	background-color: #eee;
+}
+
+.surat {
+	width: 21cm;
+	height: 29.7cm;
+	background-color: white;
+	margin: auto;
+	padding: auto;
+}
+
+.kop_surat {
+	padding: 10px 15px;
+}
+
+.tabel2 {
+	width: 400px;
+	height: 140px;
+}
+
+img {
+	width: 80px;
+	padding-right: 10px;
+}
+
+.panjang {
+	text-align: left;
+	vertical-align: bottom;
+}
+
+.stmik {
+	color: red;
+	font-size: 50px;
+	height: 40px;
+}
+
+.ikmi {
+	color: blue;
+	font-size: 30px;
+	vertical-align: bottom;
+}
+
+.cirebon {
+	color: green;
+	font-size: 20px;
+	vertical-align: top;
+}
+
+p {
+	font-family: calibri;
+}
+
+
+.sk {
+	width: 13cm;
+	height: 0.6cm;
+	text-align: center;
+	padding-top: 4px;
+	background-color: maroon;
+	color: white;
+	float: left;
+}
+
+.akreditasi {
+	width: 7cm;
+	height: 0.6cm;
+	text-align: center;
+	padding-top: 4px;
+	background-color: green;
+	color: white;
+	float: left;
+}
+
+.isi {
+	text-align: center;
+	padding-top: 30px;
+	
+}
+
+h3 {
+	font-style: line;
+	text-decoration: 3px underline;
+}
+
+.halaman a {
+	padding-top: 10px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 10px;
+	background-color: mediumseagreen;
+	padding: 10px 25px;
+	justify-content: center;
+	border: none;
+}
