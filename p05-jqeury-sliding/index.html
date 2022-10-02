@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylepita.css">
+	<title>P05 JQuery Sliding</title>
+	
+</head>
+<body>
+	<div class="wadah">
+		<div id="judul">P05 jQuery Sliding - Klik Disini</div>
+		<div id="isi">
+				With jQuery you can create a sliding effect on elements. <br> jQuery has the following slide methods: <br>
+				slideDown() <br>
+				slideUp() <br>
+				slideToggle() <br><br>
+				1. jQuery slideDown()Method <br> The jQuery slideDown() method in used to slide down an element <br> syntax: $(selector).slideDown(speed,callback);<br><br>
+				2. jQuery slideUp() Method <br> he jQuery slideDown() method in used to slide up an element <br> syntax: $(selector).slideUp(speed,callback);<br><br>
+				3. jQuery slideTogle() Method <br> The jQuery slideToggle() Method toggles between the slideDown() and slideUp() methods.
+		</div>
+	</div> <br> <br>
+	<!--<center><button class="halaman"><a href="../pages.html">Halaman utama</a></button></center>-->
+
+	<script>
+		$(document).ready(function(){
+			$("#judul").click(function(){
+				$("#isi").slideToggle("slow");
+			});
+		});
+	</script>
+</body>
+</html>

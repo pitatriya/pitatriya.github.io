@@ -1,0 +1,38 @@
+#judul {
+	padding: 5px;
+	text-align: center;
+	background-color: orange;
+	border: solid 1px white;
+	height: 30px; 
+	border-radius: 7px;
+	color: white;
+	font-family: calibri;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+#isi {
+	background-color: dodgerblue;
+	border: solid 1px white;
+	padding: 50px;
+	display: none;
+	color: white;
+	font-family: calibri;
+	border-radius: 10px;
+}
+
+.wadah {
+	width: 80%;
+	margin: auto;
+}
+
+.halaman,a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	background-color: mediumseagreen;
+	padding: 10px 25px;
+	border-radius: 4px;
+	justify-content: center;
+	border: none;
+}
