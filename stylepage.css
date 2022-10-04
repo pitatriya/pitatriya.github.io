@@ -3,12 +3,30 @@ body {
 	background-color: #eee;
 }
 
+.utama {
+	width: 900px;
+	margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+	[class="utama"] {
+		width: 100%;
+	}
+}
+
 img {
 	width: 4cm;
 	height: 4cm;
 	object-fit: cover;
 	border-radius: 50%;
+	border: 2px solid dodgerblue;
+	transition: 0.2s;
+}
 
+img:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+	box-shadow: 2px 2px 3px gray;
 }
 
 #menu-utama {
@@ -16,17 +34,17 @@ img {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	border: 1px solid white;
-	background-color: orange;
+	border: 2px solid white;
+	background-color: rgb(23, 123, 165);
 	border-radius: 4px;
 	color: white;
 }
 
-.utama li {
+li {
 	float: left;
 }
 
-.utama li a {
+li a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -38,7 +56,7 @@ img {
 
 }
 
-.utama li a:hover {
+li a:hover {
 	transform: scale(1.1);
 	box-shadow: 1px 1px 4px white;
 	color: black;
@@ -55,7 +73,7 @@ img {
 	display: none;
 	color: black;
 	text-align: left ;
-	box-shadow: 5px 5px 3px orange;
+	box-shadow: 5px 5px 3px rgb(23, 175, 184);
 	border-radius: 5px;
 }
 
@@ -67,112 +85,44 @@ img {
 	font-weight: bold;
 }
 
-.halaman a {
-	color: white;
-	text-decoration: none;
-	text-align: center;
-	background-color: mediumseagreen;
-	padding: 10px 25px;
-	border-radius: 4px;
-	justify-content: center;
-	border: none;
-}
-
-.samping {
-	float: left;
-	width: 20%;
-}
-
-.utama {
-	float: right;
-	width: 76%;
-	text-align: center;
-}
-
-.menu-samping {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 23%;
-	height: 100%;
-	position: fixed;
-	overflow: auto;
-	background-color: white;
-	text-align: left;
-	border-radius: 4px;
-	border: 2px solid rgba(255, 0, 0, 0.2);
-}
-
-.menu-samping li a {
-	display: block;
-	color: #000;
-	padding: 8px 16px;
-	text-decoration: none;
-}
-
-.menu-samping li a:hover {
-	background-color: orange;
-	color: white;
-}
-
-
-.menu-samping li a.active{
-	background-color: rgba(255, 0, 0, 0.6);
-	color: white;
-	text-align: center;
-	font-size: 20px;
-	border-radius: 4px;
-}
-
-
-@media only screen and (max-width: 768px) {
-	[class="porto"] {
-		width: 100%;
-	}
-}
-
-.judul {
-  color: black;
-  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.6);
-  padding: 8px 16px;
-  width: 100%;
-  text-align: left;
-  font-size: 20px;
-  border: none;
-  font-style: bold;
+.isi__5 {
   background-color: white;
-}
-
-/*.menu {
-  position: relative;
-}
-
-.menu-isi {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 30px;
+  color: black;
+  text-align: left ;
+  box-shadow: 5px 5px 3px rgb(23, 175, 184);
+  border-radius: 5px;
   z-index: 1;
-}*/
+}
 
-.menu-isi a {
+.isi__5 a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-/*.menu-isi a:hover {background-color: #04AA6D}
-
-.menu:hover .menu-isi {
-	display: block;
-}*/
+.isi__5 a:hover {
+	background-color: rgb(39, 193, 184);
+	color: white;
+	box-shadow: 2px 2px 3px gray;
+}
 
 .kartu {
-	width: 100%;
 	background-color: white;
-	padding-top: 10px;
+	padding: 0;
+	padding: 0;
 	border-radius: 10px;
-	border: 3px solid orange;
+	border: 4px solid rgb(23, 175, 184);
+	text-align: center;
+}
+
+.tema {
+	position: relative;
+	animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {left: -50px;}
+    to {left: 50px;}
 }
